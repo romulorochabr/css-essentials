@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header,
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        main {
+            padding: 1em;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 1em;
+        }
+
+        .item {
+            background-color: #f4f4f4;
+            flex: 1 1 calc(50% - 1em);
+            padding: 1em;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .grid {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1em;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Responsive Design Example</h1>
+    </header>
+    <main>
+        <section class="grid">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Responsive Web Design</p>
+    </footer>
+</body>
+
+</html>
