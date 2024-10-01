@@ -18,7 +18,11 @@ h1, h2, h3 {
 
 /* Header Styles */
 .header {
-    background-color: #4CAF50;
+    /* background-color: #1ba720; */
+    background-image: url('imagens/photo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
     color: white;
     padding: 20px 0;
     text-align: center;
