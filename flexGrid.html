@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de CSS Grid</title>
+    <style>
+        /* Estilos Globais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Contêiner da grade */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 3fr; /* Sidebar (1fr) e conteúdo principal (3fr) */
+            grid-template-rows: auto 1fr auto; /* Cabeçalho, conteúdo e rodapé */
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            gap: 10px;
+            height: 100vh; /* Ocupa toda a altura da tela */
+        }
+
+        /* Áreas da Grade */
+        .header {
+            grid-area: header;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <header class="header">Cabeçalho</header>
+        <aside class="sidebar">Barra Lateral</aside>
+        <main class="main">Conteúdo Principal</main>
+        <footer class="footer">Rodapé</footer>
+    </div>
+
+</body>
+</html>
