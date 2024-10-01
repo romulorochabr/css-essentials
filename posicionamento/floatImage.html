@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de CSS Float</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        /* Estilos Globais */
+        body {
+            
+            /* font-family: "Sofia", sans-serif; */
+            /* font-family: Arial, sans-serif; */
+            font-family: Tahoma, Verdana, sans-serif;
+            line-height: 1.6;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        /* Estilo para a Imagem com Float */
+        .img-float {
+            float: left; /* Flutuar a imagem à esquerda */
+            margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+            width: 250px; /* Largura da imagem */
+            border: 2px solid #ddd; /* Borda ao redor da imagem */
+        }
+
+        /* Estilo para a seção de conteúdo */
+        .content {
+            overflow: hidden; /* Corrige problemas com float, se necessário */
+        }
+
+        /* Estilo para o título */
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exemplo de Imagem com Float</h1>
+
+    <div class="content">
+        <img src="https://via.placeholder.com/250" alt="Exemplo de Imagem" class="img-float">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur ac justo nec erat scelerisque sodales. Nam fermentum felis sit amet ligula gravida, at volutpat est scelerisque. Sed vitae augue at risus dictum laoreet. Vivamus tempor nulla nec diam feugiat, et consectetur lacus malesuada. Integer euismod nunc id velit hendrerit, sit amet vulputate orci posuere.</p>
+        
+        <p>Phasellus ut urna nec lectus dictum elementum. Vestibulum id sapien quis neque vulputate mollis. Donec consequat lectus ut turpis consequat, vel accumsan nunc fermentum. Curabitur porttitor nunc in enim aliquet, in bibendum enim congue. Nullam feugiat arcu vitae nisl luctus tempor. Nam porttitor, nisl ac varius fringilla, erat libero sodales velit, vel convallis lorem purus nec sapien. Nam non metus ut justo posuere consequat in nec mi.</p>
+
+        <p>Suspendisse potenti. Aenean quis felis arcu. Duis elementum vehicula nibh, at vulputate ex interdum eget. Sed in est tortor. Cras suscipit nisl odio, id lacinia ligula vulputate quis. Pellentesque dapibus convallis nulla nec egestas. Praesent at bibendum libero, at dignissim tortor.</p>
+    </div>
+
+</body>
+</html>
